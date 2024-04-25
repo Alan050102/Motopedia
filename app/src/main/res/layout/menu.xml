@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#676767"
+    tools:context=".MenuActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#7C0505"
+            android:longClickable="false"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:logo="@drawable/logo"
+            app:title="Motopedia"
+            app:titleMarginStart="40dp"
+            app:titleTextColor="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/motopedias" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:autoText="false"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Bienvenido a motopedia"
+                android:textColor="#FF0000"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:autoText="false"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="En donde aprenderás sobre el manejo de desechos de tu motocicleta, como tambien conocerás las partes de tu motocicleta"
+                android:textColor="#F83636"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <Button
+                    android:id="@+id/btnConocer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight=".1"
+                    android:text="¿Por qué es importante conocer tu motocicleta?"
+                    app:backgroundTint="#CF0101"
+                    app:cornerRadius="10dp"
+                    app:iconTintMode="add" />
+
+                <Button
+                    android:id="@+id/btnODS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight=".1"
+                    android:text="ODS"
+                    app:backgroundTint="#CF0101"
+                    app:cornerRadius="10dp"
+                    app:iconTintMode="add" />
+
+                <Button
+                    android:id="@+id/btnMantenimiento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight=".1"
+                    android:text="Mantenimiento de la motocicleta"
+                    app:backgroundTint="#CF0101"
+                    app:cornerRadius="10dp"
+                    app:iconTintMode="add" />
+
+                <Button
+                    android:id="@+id/btnReciclaje"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight=".1"
+                    android:text="Reciclaje y control de desechos"
+                    app:backgroundTint="#CF0101"
+                    app:cornerRadius="10dp"
+                    app:iconTintMode="add" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight=".1"
+                    android:text="Nuestro catalogo de motocicletas"
+                    app:backgroundTint="#CF0101"
+                    app:cornerRadius="10dp"
+                    app:iconTintMode="add" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight=".1"
+                    android:text="Acerca de nosotros"
+                    app:backgroundTint="#CF0101"
+                    app:cornerRadius="10dp"
+                    app:iconTintMode="add" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
