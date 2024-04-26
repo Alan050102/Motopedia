@@ -11,11 +11,11 @@ import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
 
-class MenuActivity : AppCompatActivity() {
+class Acerca : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.menu)
+        setContentView(R.layout.activity_acerca)
 
         auth = Firebase.auth
         var toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
@@ -29,12 +29,12 @@ class MenuActivity : AppCompatActivity() {
                 return when (menuItem.itemId)
                 {
                     R.id.info -> {
-                        startActivity(Intent(this@MenuActivity, Acerca::class.java))
+                        startActivity(Intent(this@Acerca, Acerca::class.java))
                         true
                     }
                     R.id.logout -> {
                         auth.signOut()
-                        startActivity(Intent(this@MenuActivity, MainActivity::class.java))
+                        startActivity(Intent(this@Acerca, MainActivity::class.java))
                         finish()
                         true
                     }
@@ -44,5 +44,8 @@ class MenuActivity : AppCompatActivity() {
                 }
             }
         })
+
     }
+
+
 }

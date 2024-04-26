@@ -16,15 +16,6 @@
             android:name=".Acerca"
             android:exported="false" />
         <activity
-            android:name=".AcercaApp"
-            android:exported="false" />
-        <activity
-            android:name=".AcercaAPP"
-            android:exported="false" />
-        <activity
-            android:name=".Acerca_APP"
-            android:exported="false" />
-        <activity
             android:name=".RecuperarContra"
             android:exported="false" />
         <activity

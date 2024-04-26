@@ -13,7 +13,12 @@
           "package_name": "com.example.motopedia"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "955045959235-gj0mjo3o7nuap5d8umi22tka02ni8d9f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAf6OoVq4D2FUBFp4tAo_h9S-NClD1fAWI"
@@ -21,7 +26,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955045959235-gj0mjo3o7nuap5d8umi22tka02ni8d9f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

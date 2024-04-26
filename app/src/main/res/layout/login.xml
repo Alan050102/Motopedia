@@ -32,7 +32,8 @@
             android:hint="Email"
             android:inputType="textEmailAddress"
             android:minHeight="48dp"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            android:textColorHint="#D8D7D7" />
 
         <EditText
             android:id="@+id/password_Text"
@@ -42,7 +43,8 @@
             android:hint="Contraseña"
             android:inputType="textPassword"
             android:minHeight="48dp"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            android:textColorHint="#D8D7D7" />
 
         <Button
             android:id="@+id/login"
