@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import android.widget.Button
 import androidx.core.view.MenuProvider
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
@@ -18,6 +19,14 @@ class MenuActivity : AppCompatActivity() {
         setContentView(R.layout.menu)
 
         auth = Firebase.auth
+
+        var conocer = findViewById<Button>(R.id.btnConocer)
+        var ods = findViewById<Button>(R.id.btnODS)
+        var mantenimiento = findViewById<Button>(R.id.btnMantenimiento)
+        var reciclaje = findViewById<Button>(R.id.btnReciclaje)
+        var moto = findViewById<Button>(R.id.btnMoto)
+        var nosotros = findViewById<Button>(R.id.btnNosotros)
+
         var toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
         addMenuProvider(object : MenuProvider {
@@ -44,5 +53,25 @@ class MenuActivity : AppCompatActivity() {
                 }
             }
         })
+
+        conocer.setOnClickListener {
+            startActivity(Intent(this, Conocer::class.java).putExtra("saludo", "Crear Cuenta"))
+        }
+        ods.setOnClickListener {
+            startActivity(Intent(this, ODS::class.java).putExtra("saludo", "Crear Cuenta"))
+        }
+        mantenimiento.setOnClickListener {
+            startActivity(Intent(this, Mantenimiento::class.java).putExtra("saludo", "Crear Cuenta"))
+        }
+        reciclaje.setOnClickListener {
+            startActivity(Intent(this, Reciclaje::class.java).putExtra("saludo", "Crear Cuenta"))
+        }
+        moto.setOnClickListener {
+            startActivity(Intent(this, Moto::class.java).putExtra("saludo", "Crear Cuenta"))
+        }
+        nosotros.setOnClickListener {
+            startActivity(Intent(this, Nosotros::class.java).putExtra("saludo", "Crear Cuenta"))
+        }
+
     }
 }

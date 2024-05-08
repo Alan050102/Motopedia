@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A9636363"
+    android:background="#FFFFFF"
     tools:context=".RecuperarContra">
 
     <LinearLayout
@@ -22,16 +22,18 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:text="Ingresa tus datos, para recuperar tu contraseña"
-            android:textColor="#E60B0B"
-            android:textSize="34sp" />
+            android:textColor="#0544E6"
+            android:textSize="34sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Correo"
-            android:textColor="#DA0101"
+            android:textColor="#000000"
             android:textSize="24sp" />
 
         <EditText
@@ -42,15 +44,15 @@
             android:hint="Ingresa tu correo"
             android:inputType="textEmailAddress"
             android:minHeight="48dp"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#D3D3D3" />
+            android:textColor="#000000"
+            android:textColorHint="#787878" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Nueva Contraseña"
-            android:textColor="#DA0101"
+            android:textColor="#000000"
             android:textSize="24sp" />
 
         <EditText
@@ -61,8 +63,8 @@
             android:hint="Ingresa tu  nueva contraseña"
             android:inputType="textPassword"
             android:minHeight="48dp"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#D3D3D3" />
+            android:textColor="#000000"
+            android:textColorHint="#787878" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -75,7 +77,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_weight=".1"
-                android:backgroundTint="#DF0202"
+                android:backgroundTint="#000080"
                 android:text="Crear contraseña"
                 android:textColor="#FFFFFF"
                 app:cornerRadius="4dp" />
@@ -86,7 +88,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_weight=".1"
-                android:backgroundTint="#A50000"
+                android:backgroundTint="#000045"
                 android:text="Eliminar datos"
                 android:textColor="#FFFFFF"
                 app:cornerRadius="4dp" />

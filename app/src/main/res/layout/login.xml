@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A9636363"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -32,8 +32,8 @@
             android:hint="Email"
             android:inputType="textEmailAddress"
             android:minHeight="48dp"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#D8D7D7" />
+            android:textColor="#000000"
+            android:textColorHint="#787878" />
 
         <EditText
             android:id="@+id/password_Text"
@@ -43,15 +43,16 @@
             android:hint="Contraseña"
             android:inputType="textPassword"
             android:minHeight="48dp"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#D8D7D7" />
+            android:textColor="#000000"
+            android:textColorHint="#787878" />
 
         <Button
             android:id="@+id/login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"
-            app:backgroundTint="#9E0202" />
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#000000" />
 
         <Button
             android:id="@+id/autgoogle"
@@ -61,14 +62,14 @@
             android:drawingCacheQuality="auto"
             android:text="Login con google"
             android:textColor="#000000"
-            app:backgroundTint="#FFFFFF" />
+            app:backgroundTint="#F4EDED" />
 
         <Button
             android:id="@+id/crear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Crear cuenta"
-            android:textColor="#E10909"
+            android:textColor="#000000"
             app:backgroundTint="@android:color/transparent" />
 
         <Button
@@ -76,7 +77,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Recuperar Password"
-            android:textColor="#E10909"
+            android:textColor="#000000"
             app:backgroundTint="@android:color/transparent" />
 
     </LinearLayout>

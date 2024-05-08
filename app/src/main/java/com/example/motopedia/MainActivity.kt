@@ -109,7 +109,7 @@ class MainActivity : AppCompatActivity() {
         // Check if user is signed in (non-null) and update UI accordingly.
         val currentUser = auth.currentUser
         if (currentUser == null) {
-            Toast.makeText(this, "No hay usuarios Autenticados", Toast.LENGTH_LONG).show()
+            //Toast.makeText(this, "No hay usuarios Autenticados", Toast.LENGTH_LONG).show()
         } else {
             startActivity(Intent(this, MenuActivity::class.java))
             finish()

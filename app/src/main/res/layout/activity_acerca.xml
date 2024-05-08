@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#676767"
+    android:background="#FFFFFF"
     tools:context=".Acerca">
 
     <LinearLayout
@@ -20,7 +20,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#7C0505"
+            android:background="#030365"
             android:longClickable="false"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
@@ -33,7 +33,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingTop="20dp">
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp">
 
             <TextView
                 android:id="@+id/textView7"
@@ -41,25 +43,27 @@
                 android:layout_height="wrap_content"
                 android:text="¿De que trata la aplicación?"
                 android:textAlignment="center"
-                android:textColor="#FF0000"
-                android:textSize="48sp" />
+                android:textColor="#0544E6"
+                android:textSize="34sp" />
 
             <TextView
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
                 android:text="La app  contiene secciones donde incluye información sobre la aplicación. Además, cuenta con una sección de medio ambiente relacionada con los Objetivos de Desarrollo Sostenible (ODS) publicados por la Organización de las Naciones Unidas (ONU), específicamente los objetivos 12 y 13. También dispone de un apartado de información para los usuarios acerca de los modelos de motocicletas que incluye, proporcionando información importante sobre los componentes de las motocicletas, mantenimiento preventivo, manejo de desechos al concluir el mantenimiento y ubicación de centros de distribución autorizados a los que pueden acudir."
-                android:textAlignment="center"
-                android:textColor="#E4E4E4"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
                 android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
                 android:text="Aplicación desarrollada por los estudiantes del Centro Universitario de Tonalá de la carrera de Ingeniería de Ciencias Computacionales del octavo semestre"
-                android:textAlignment="center"
-                android:textColor="#ECECEC"
+                android:textAlignment="textStart"
+                android:textColor="#021891"
                 android:textSize="20sp" />
         </LinearLayout>
 
